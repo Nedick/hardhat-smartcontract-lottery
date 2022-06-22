@@ -25,6 +25,14 @@ module.exports = {
             accounts: [PRIVATE_KEY],
         },
     },
+    gasReporter: {
+        enabled: false, // set to false if you want to disable gas reporter during development
+        outputFile: "gas-reporter.txt",
+        noColors: true,
+        currency: "USD",
+        coinmarketcap: COINMARKETCAP_API_KEY,
+        token: "MATIC",
+    },
     solidity: "0.8.8",
     namedAccounts: {
         deployer: {

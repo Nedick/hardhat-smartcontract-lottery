@@ -120,3 +120,11 @@ or, to fix:
 ```
 yarn lint:fix
 ```
+
+# Roll a winner on local network
+
+Just run the script mockOffchain to select a winner from the players that entered the raffle:
+
+```
+yarn hardhat run scripts/mockOffchain.js --network localhost
+```
